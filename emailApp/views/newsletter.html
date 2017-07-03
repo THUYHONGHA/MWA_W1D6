@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>{{title}}</h1>
+    <form id = "frm" action= "/newsletter" method="post">
+        <input type="email" name="email" placeholder="Please enter your email">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}" />
+        <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
